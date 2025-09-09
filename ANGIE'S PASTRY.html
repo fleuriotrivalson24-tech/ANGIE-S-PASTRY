@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANGIE'S PASTRY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+
+    .hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('b.jpeg');
+    background-size: cover;
+    background-position: center;
+    }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-pink-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i data-feather="heart" class="text-pink-500 mr-2"></i>
+                    <span class="font-bold text-xl text-pink-600">ANGIE'S PASTRY</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-pink-600 hover:text-pink-800">Accueil</a>
+                    <a href="#products" class="text-gray-600 hover:text-pink-600">Produit</a>
+                    <a href="#about" class="text-gray-600 hover:text-pink-600">A propos</a>
+                    <a href="#contact" class="text-gray-600 hover:text-pink-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">ANGIE'S PASTRY</h1>
+            <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="200">C'est l'assurance de vos desserts</p>
+            <a href="#products" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center" data-aos="zoom-in" data-aos-delay="400">
+                Decouvrir nos produits <i data-feather="arrow-down" class="ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-pink-600 mb-12" data-aos="fade-up">NOS PÂTISSERIES</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="c.jpeg" alt="Birthday Cake" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white font-bold text-lg">Birthday Cake</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl text-pink-600 mb-2">Birthday Cake</h3>
+                        <p class="text-gray-600">Des gâteaux spécialement conçus pour vos fêtes, personnalisables selon vos préférences.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="q.jpg" alt="Brownie" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white font-bold text-lg">Brownie</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl text-pink-600 mb-2">Brownie</h3>
+                        <p class="text-gray-600">Un brownie riche en chocolat, une gourmandise pour les amateurs de douceurs.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="t.jpg" alt="Cup Cake" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white font-bold text-lg">Cup Cake</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl text-pink-600 mb-2">Cup Cake</h3>
+                        <p class="text-gray-600">De petits gâteaux individuels aux saveurs variées et aux décorations raffinées.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="o.jpg" alt="Cake Cups" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white font-bold text-lg">Cake Cups</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl text-pink-600 mb-2">Cake Cups</h3>
+                        <p class="text-gray-600">Une variété de cupcakes, parfaits pour partager ou pour vos événements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-pink-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">PASSER VOS COMMANDES</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Nous preparons nos produits avec amour et attention pour satisfaire tous vos besoins en douceur.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="tel:+50937285622" class="bg-white text-pink-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-flex items-center" data-aos="zoom-in" data-aos-delay="300">
+                    <i data-feather="phone" class="mr-2"></i> +509 37 28 5622
+                </a>
+                <a href="tel:+50936308082" class="bg-white text-pink-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-flex items-center" data-aos="zoom-in" data-aos-delay="400">
+                    <i data-feather="phone" class="mr-2"></i> +509 36 30 8082
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="n.jpg" alt="About Angie's Pastry" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-pink-600 mb-6">ANGIE'S PASTRY</h2>
+                    <p class="text-gray-600 mb-4">Angie's Pastry est une pâtisserie qui allie tradition et créativité pour offrir des douceurs qui font sourire.</p>
+                    <p class="text-gray-600 mb-4">Depuis 2023, nous servons nos clients avec des produits faits à partir d’ingrédients de qualité et d’amour.</p>
+                    <p class="text-gray-600">Nous proposons également un service de livraison pour que nos douceurs et plaisirs sucrés arrivent directement chez vous.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-pink-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-pink-600 mb-12" data-aos="fade-up">Contactez-nous</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-pink-600 mb-4">Pour plus informations</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="text-pink-500 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Numero Telephone</h4>
+                                    <p class="text-gray-600">+509 37 28 5622</p>
+                                    <p class="text-gray-600">+509 36 30 8082</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="clock" class="text-pink-500 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">les heures d’ouverture</h4>
+                                    <p class="text-gray-600">Lundi - Samedi: 8:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Dimanche: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="text-pink-500 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Localisation</h4>
+                                    <p class="text-gray-600">Port-au-prince, Haiti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-pink-600 mb-4">Envoyer un message</h3>
+                        <form id="contactForm">
+                            <div class="mb-4">
+                              <label for="name" class="block text-gray-700 mb-2">Nom</label>
+                              <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div class="mb-4">
+                              <label for="email" class="block text-gray-700 mb-2">Email</label>
+                              <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div class="mb-4">
+                              <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
+                              <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div class="mb-4">
+                              <label for="message" class="block text-gray-700 mb-2">Message</label>
+                              <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-lg inline-flex items-center">
+                              Envoyer <i data-feather="send" class="ml-2"></i>
+                            </button>
+                          </form>
+                          
+                          <script src="https://unpkg.com/feather-icons"></script>
+                          <script>
+                            feather.replace();
+                          
+                            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                              e.preventDefault(); // Anpeche paj la reload
+                          
+                              const name = encodeURIComponent(document.getElementById('name').value);
+                              const email = encodeURIComponent(document.getElementById('email').value);
+                              const phone = encodeURIComponent(document.getElementById('phone').value);
+                              const message = encodeURIComponent(document.getElementById('message').value);
+                          
+                              // Ajoute tit Angie’s Pastry nan mesaj la ak Email
+                              const text = `*Angie's Pastry* 🍰%0A--------------------%0ANom: ${name}%0AEmail: ${email}%0ATéléphone: ${phone}%0AMessage: ${message}`;
+                              
+                              const waLink = `https://wa.me/50937285622?text=${text}`;
+                          
+                              window.open(waLink, '_blank'); // Ouvri WhatsApp ak mesaj la
+                            });
+                          </script>
+                                   
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/50937285622" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 z-50" data-aos="zoom-in" data-aos-delay="500">
+        <i data-feather="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-pink-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i data-feather="heart" class="text-pink-300 mr-2"></i>
+                        <span class="font-bold text-xl">ANGIE'S PASTRY</span>
+                    </div>
+                    <p class="text-pink-200 mt-2">C'est l'assurance de vos desserts</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-pink-200 hover:text-white">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-pink-200 hover:text-white">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-pink-700 mt-6 pt-6 text-center text-pink-200">
+                <p>&copy; © 2025 Angie's Pastry. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
